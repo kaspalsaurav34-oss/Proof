@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PROOF helps students turn skills and ideas into demonstrable work through missions, peer review, and portfolios."
+    />
+    <title>PROOF | Your potential deserves proof.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav-wrap">
+          <a href="#home" class="brand" aria-label="PROOF home">
+            <span class="brand-mark">P</span>
+            <span class="brand-text">PROOF</span>
+          </a>
+
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="#missions">Missions</a>
+            <a href="#submission">Submit</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+          </nav>
+
+          <div class="nav-actions">
+            <button class="nav-button ghost-button" type="button">Log in</button>
+            <button class="nav-button primary-button" type="button">Join PROOF</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="home" class="hero-section">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Demo prototype · not a live verification system</span>
+              <h1>Your potential deserves proof.</h1>
+              <p class="hero-text">
+                PROOF helps students and young people turn ideas, projects, and creative skills into
+                real evidence of what they can do. Discover missions, submit work, get feedback,
+                and build a portfolio that proves your capability.
+              </p>
+
+              <div class="cta-row">
+                <a class="primary-button button-link" href="#missions">Explore Missions</a>
+                <a class="secondary-button button-link" href="#dashboard">Join PROOF</a>
+              </div>
+
+              <ul class="feature-list" aria-label="Platform benefits">
+                <li>Mission-based learning</li>
+                <li>Evidence-based submissions</li>
+                <li>Portfolio built around real work</li>
+              </ul>
+            </div>
+
+            <div class="hero-panel" aria-label="Product preview card">
+              <div class="panel-window">
+                <div class="panel-header">
+                  <span class="dot green"></span>
+                  <span class="dot amber"></span>
+                  <span class="dot red"></span>
+                </div>
+
+                <div class="panel-content">
+                  <div class="mini-card adventure-card">
+                    <div>
+                      <p class="label">Current mission</p>
+                      <h3>Design a community impact campaign</h3>
+                    </div>
+                    <span class="pill accent">Creative</span>
+                  </div>
+
+                  <div class="mission-preview">
+                    <div>
+                      <p class="label">Progress</p>
+                      <strong>3 of 5 steps completed</strong>
+                    </div>
+                    <div class="progress-track" aria-hidden="true">
+                      <span class="progress-fill"></span>
+                    </div>
+                  </div>
+
+                  <div class="proof-list">
+                    <div class="proof-item">
+                      <span class="status-indicator verified"></span>
+                      <div>
+                        <p>Brand strategy deck</p>
+                        <small>Verified by review panel</small>
+                      </div>
+                    </div>
+                    <div class="proof-item">
+                      <span class="status-indicator review"></span>
+                      <div>
+                        <p>Campaign mockups</p>
+                        <small>Under review</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-section" aria-label="Platform statistics">
+          <div class="container stats-grid">
+            <article class="stat-card">
+              <p class="stat-label">Mission themes</p>
+              <strong>4 categories</strong>
+              <span>Creative, Technology, Business, Community</span>
+            </article>
+            <article class="stat-card">
+              <p class="stat-label">Submission flow</p>
+              <strong>Draft to review</strong>
+              <span>Human review and feedback process</span>
+            </article>
+            <article class="stat-card">
+              <p class="stat-label">Portfolio model</p>
+              <strong>Evidence-first</strong>
+              <span>Share what you built and how you learned</span>
+            </article>
+            <article class="stat-card">
+              <p class="stat-label">Demo status</p>
+              <strong>Prototype only</strong>
+              <span>No real user data or claims are implied</span>
+            </article>
+          </div>
+        </section>
+
+        <section id="missions" class="content-section">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Mission explorer</span>
+                <h2>Choose a challenge worth proving.</h2>
+              </div>
+            </div>
+
+            <div class="filter-bar">
+              <div class="chip-group" id="categoryFilters" aria-label="Mission categories"></div>
+
+              <label class="search-field" aria-label="Search missions">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10.5 3a7.5 7.5 0 015.94 12.75l4.11 4.11 1.41-1.41-4.11-4.11A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 104.01 9.41A5.5 5.5 0 0010.5 5z"
+                  />
+                </svg>
+                <input id="missionSearch" type="search" placeholder="Search missions" />
+              </label>
+            </div>
+
+            <div id="missionGrid" class="mission-grid" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section id="submission" class="content-section submission-section">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Submission system</span>
+                <h2>Submit your work and tell the story behind it.</h2>
+              </div>
+            </div>
+
+            <div class="submission-grid">
+              <form id="submissionForm" class="submission-form" novalidate>
+                <div class="field-group">
+                  <label for="missionSelect">Mission</label>
+                  <select id="missionSelect" name="missionSelect" required>
+                    <option value="">Select a mission</option>
+                  </select>
+                </div>
+
+                <div class="field-group">
+                  <label for="submissionTitle">Project title</label>
+                  <input id="submissionTitle" name="submissionTitle" type="text" placeholder="e.g. Sustainable packaging concept" required />
+                </div>
+
+                <div class="field-group">
+                  <label for="submissionDescription">What did you make?</label>
+                  <textarea id="submissionDescription" name="submissionDescription" rows="5" placeholder="Describe your process, outcome, and what problem you solved." required></textarea>
+                </div>
+
+                <div class="field-group">
+                  <label for="submissionLink">Project link or proof URL</label>
+                  <input id="submissionLink" name="submissionLink" type="url" placeholder="https://example.com/proof" />
+                </div>
+
+                <div class="field-group">
+                  <label for="evidenceUpload">Upload evidence</label>
+                  <input id="evidenceUpload" name="evidenceUpload" type="file" accept="image/*,.pdf,.doc,.docx" />
+                </div>
+
+                <div class="field-group">
+                  <label for="submissionStatus">Status</label>
+                  <select id="submissionStatus" name="submissionStatus">
+                    <option value="Draft">Draft</option>
+                    <option value="Submitted">Submitted</option>
+                    <option value="Under Review">Under Review</option>
+                    <option value="Verified">Verified</option>
+                    <option value="Needs Improvement">Needs Improvement</option>
+                  </select>
+                </div>
+
+                <button class="primary-button submit-button" type="submit">Save submission</button>
+              </form>
+
+              <aside class="submission-guide" aria-label="Submission guidance">
+                <div class="guide-card">
+                  <h3>How proof works</h3>
+                  <ol>
+                    <li>Choose a mission and describe the work you completed.</li>
+                    <li>Add links, screenshots, or uploaded evidence to support your submission.</li>
+                    <li>Track the status as it moves from Draft to review.</li>
+                    <li>Only reviewers or the user can move a submission into Verified in a live product.</li>
+                  </ol>
+                </div>
+                <div class="guide-card safe-card">
+                  <h3>Demo safety note</h3>
+                  <p>
+                    This prototype demonstrates a workflow only. It never auto-verifies or claims real
+                    achievements without an actual human review process.
+                  </p>
+                </div>
+              </aside>
+            </div>
+
+            <div id="formMessage" class="form-message" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section id="dashboard" class="content-section dashboard-section">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Student dashboard</span>
+                <h2>Track your growth and proof journey.</h2>
+              </div>
+            </div>
+
+            <div class="dashboard-metrics">
+              <article class="metric-card">
+                <p>Joined missions</p>
+                <strong id="joinedMissionCount">0</strong>
+              </article>
+              <article class="metric-card">
+                <p>Submitted work</p>
+                <strong id="submittedWorkCount">0</strong>
+              </article>
+              <article class="metric-card">
+                <p>In review</p>
+                <strong id="reviewCount">0</strong>
+              </article>
+              <article class="metric-card">
+                <p>Verified proofs</p>
+                <strong id="verifiedCount">0</strong>
+              </article>
+            </div>
+
+            <div class="dashboard-layout">
+              <div class="panel-block">
+                <div class="panel-header-row">
+                  <h3>Joined missions</h3>
+                  <span class="muted-pill">Demo data</span>
+                </div>
+                <ul id="joinedMissionList" class="stack-list"></ul>
+              </div>
+
+              <div class="panel-block">
+                <div class="panel-header-row">
+                  <h3>Recent submissions</h3>
+                  <button id="advanceReviewButton" class="small-button" type="button">Advance review</button>
+                </div>
+                <div id="submissionList" class="submission-list"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio" class="content-section portfolio-section">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Portfolio</span>
+                <h2>Build a proof-led portfolio that travels with you.</h2>
+              </div>
+            </div>
+
+            <div class="portfolio-tools">
+              <label class="toggle-wrap" for="privacyToggle">
+                <input id="privacyToggle" type="checkbox" checked />
+                <span>Public portfolio</span>
+              </label>
+              <button id="copyPortfolioLink" class="secondary-button small-button" type="button">Copy public link</button>
+            </div>
+
+            <div class="portfolio-link-panel">
+              <span class="link-label">Shareable link</span>
+              <code id="portfolioLink">https://proof-demo.example/portfolio/harper-rivera</code>
+            </div>
+
+            <div id="portfolioGrid" class="portfolio-grid"></div>
+          </div>
+        </section>
+
+        <section id="about" class="content-section about-section">
+          <div class="container about-grid">
+            <div>
+              <span class="eyebrow">About PROOF</span>
+              <h2>We believe opportunity should be earned through evidence, not just words.</h2>
+            </div>
+            <div class="about-copy">
+              <p>
+                PROOF was created to help young people around the world turn their curiosity into
+                visible proof of work. We want to make it easier for students to demonstrate what they
+                can build, design, solve, and lead — even before they have a formal resume.
+              </p>
+              <p>
+                Our mission is to create a trusted, global space where talent is visible, feedback is
+                useful, and growth is measurable. This prototype is intentionally designed as a zero-budget
+                starting point for that bigger vision.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <div>
+            <a href="#home" class="brand brand-footer">
+              <span class="brand-mark">P</span>
+              <span class="brand-text">PROOF</span>
+            </a>
+          </div>
+          <div class="footer-links">
+            <a href="#missions">Missions</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#portfolio">Portfolio</a>
+          </div>
+          <p>Don’t just say you can. PROVE IT.</p>
+        </div>
+      </footer>
+    </div>
+
+    <div id="missionModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="modal"></div>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="close-button" data-close="modal" type="button" aria-label="Close mission details">×</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
